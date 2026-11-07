@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kingsman Age Intelligence</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+        <h1 class="logo">Kingsman Agency</h1>
+        <p class="subtitle">Age Intelligence System</p>
+
+        <div class="input-group">
+            <label>Agent Birthdate</label>
+            <input type="date" id="birthdate">
+            <button onclick="startCalculation()">Analyze Age</button>
+        </div>
+
+        <div class="results">
+            <div class="grid">
+                <div class="box"><span id="years">0</span><small>Years</small></div>
+                <div class="box"><span id="months">0</span><small>Months</small></div>
+                <div class="box"><span id="days">0</span><small>Days</small></div>
+                <div class="box"><span id="hours">0</span><small>Hours</small></div>
+                <div class="box"><span id="minutes">0</span><small>Minutes</small></div>
+                <div class="box"><span id="seconds">0</span><small>Seconds</small></div>
+            </div>
+
+            <div class="countdown">
+                <h3>🎂 Next Birthday Countdown</h3>
+                <p id="birthdayCountdown">--</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

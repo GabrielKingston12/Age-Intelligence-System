@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@300;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: radial-gradient(circle at top, #1a1a1a, #000);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+}
+
+.card {
+    background: #111;
+    border: 1px solid #d4af37;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 0 30px rgba(212,175,55,0.2);
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    color: #d4af37;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    color: #aaa;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #d4af37;
+    background: #000;
+    color: white;
+    cursor: pointer;
+}
+
+/* Style native calendar icon */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    opacity: 1;
+    cursor: pointer;
+}
+
+button {
+    padding: 12px;
+    background: #d4af37;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #b8962e;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.box {
+    background: #1c1c1c;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #333;
+}
+
+.box span {
+    font-size: 20px;
+    color: #d4af37;
+    display: block;
+}
+
+.box small {
+    font-size: 12px;
+    color: #aaa;
+}
+
+.countdown {
+    text-align: center;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+}
+
+.countdown h3 {
+    color: #d4af37;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 20px;
+    }
+}
